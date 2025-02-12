@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!--     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+
+<body>
+    <!-- header section starts -->
+
+    <header class="fixed-top py-3">
+
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="#" class="logo">Skin Care<span class="fas fa-bacteria"></span></a>
+
+            <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+            <nav class="nav">
+<!--                <a href="templates/index.html">Home</a>-->
+                <a href="https://www.healthline.com/health/ringworm"> Know more</a>
+            </nav>
+
+        </div>
+    </header>
+    <div class="prec">
+        <p id="head">Preliminary treatment for Ringworm</p>
+        <ul class="animated-bullets">
+            <div id="dis">
+                <li>Use over-the-counter antifungal creams containing clotrimazole or miconazole.</li>
+                <li>Wash affected areas daily and ensure they are thoroughly dried.</li>
+                <li>Refrain from sharing personal items like towels or clothing.</li>
+                <li>Opt for loose-fitting clothes to keep affected areas cool and dry.</li><br><br>
+            </div>
+            <li id="doc">We highly recommend you pay a visit to your nearest doctor</li>
+        </ul>
+        
+    </div>
+   
+    <img src="/static/Images/treatment.jpeg" alt="" style="margin-left: 60%;">
+</body>
+
+</html>

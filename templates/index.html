@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+     <link rel="stylesheet" href="static/style.css">
+<!--     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+    <style>
+.hidden {
+    display: none;
+}
+.popup-content {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+    </style>
+
+
+<body>
+    <!-- header section starts -->
+
+    <header class="fixed-top py-3">
+
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="#" class="logo">Skin Care<span class="fas fa-bacteria"></span></a>
+
+            <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#prevent">Skin Types</a>
+                <a href="#check">Check Your Skin Disease</a>
+                <a href="#experts"> Our Team</a>
+                <a href="#box p-3 m-2">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- header section end-->
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="container">
+
+            <div class="row min-vh-100 align-items-center pt-5">
+
+                <div class="col-md-6">
+                    <!-- <img src="{{ url_for('static', filename='Images/istockphoto-1248674930-612x612-removebg-preview.png') }}" class="w-100" alt=""> -->
+
+                    <img src="/static/Images/istockphoto-1248674930-612x612-removebg-preview.png" class="w-100" alt="">
+
+                </div>
+
+                <div class="col-md-6 content text-center text-md-start pl-md-5">
+                    <span>your skin is your best accessory </span>
+                    <h3>protect yourself from skin disease</h3>
+                    <a href="#about" class="link-btn">learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+    <!-- home section starts  -->
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center flex-wrap-reverse">
+
+                <div class="col-md-6 content">
+
+                    <h3>About Us</h3>
+                    <p>Welcome to <b>Skin Care</b>, your trusted online platform for skin disease prediction and
+                        diagnosis. At <b>Skin Care</b>, we are dedicated to providing accurate and reliable skin health
+                        assessments using cutting-edge technology and expertise in dermatology</p>
+                    <p>Our mission is to empower individuals to take control of their skin health by offering a
+                        convenient and accessible way to identify and understand potential skin conditions. Whether
+                        you're concerned about a suspicious mole, rash, or other skin abnormalities, our platform is
+                        here to help you make informed decisions about your skin care.</p>
+                    <p>Using advanced image recognition and artificial intelligence algorithms, <b>Skin Care</b>
+                        analyzes images uploaded by users to accurately predict and diagnose skin diseases and
+                        conditions. Our proprietary technology leverages a vast database of medical images to provide
+                        proper results.</p>
+                    <p>At <b>Skin Care</b>, we understand the importance of timely and accurate diagnosis in managing
+                        skin conditions. That's why we strive to deliver fast and reliable results, allowing users to
+                        seek appropriate medical attention and treatment as needed</p>
+                    <p>Whether you're looking for answers about a specific skin concern or simply seeking peace of mind,
+                        <b>Skin Care</b> is here to support you every step of the way. Join us in our mission to promote
+                        skin health and wellness for all.
+                    </p>
+                    <p>Thank you for choosing <b>Skin Care</b> for your skin care needs. Together, we can achieve
+                        healthier, happier skin!</p>
+
+                </div>
+
+                <div class="col-md-6">
+                    <img src="/static/Images/conifer-1127-removebg-preview.png" class="w-100" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+    <!-- prevent section starts  -->
+
+    <section class="prevent" id="prevent">
+
+        <h1 class="heading"> <span>Skin Types</span> </h1>
+
+        <div class="container">
+
+            <div class="d-flex flex-wrap justify-content-center">
+
+                <div class="box p-4 m-2">
+                    <img src="/static/Images/dry.png" alt="">
+                    <p>Dry skin lacks moisture and often feels tight or flaky.<br></p>
+                    <p><b>Moisturizer:</b> Cetaphil Daily Hydrating Lotion<br>
+                        <b>Home remedy:</b> Coconut oil or almond oil can be applied to the skin to provide deep
+                        hydration and
+                        nourishment.
+                    </p>
+                </div>
+
+                <div class="box p-4 m-2">
+                    <img src="/static/Images/acne.png" alt="">
+                    <p>Combination skin has a mix of oily and dry areas on the face.<br></p>
+                    <p><b>Moisturizer:</b> Neutrogena Hydro Boost Water Gel<br>
+                        <b>Home remedy:</b> A yogurt and honey mask can help balance the skin's moisture levels. Mix
+                        equal parts of plain yogurt and honey, apply to the face, leave on for 15-20 minutes, then rinse
+                        off with lukewarm water.
+                    </p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="/static/Images/Sensitive.png" alt="">
+                    <p>Sensitive skin is easily irritated by external factors.<br></p>
+                    <p><b>Moisturizer:</b> La Roche-Posay Toleriane Double Repair Face Moisturizer<br>
+                        <b>Home remedy:</b> Aloe vera gel, which has soothing and anti-inflammatory properties, can be
+                        applied to calm sensitive skin.
+                    </p>
+                </div>
+                <div class="box p-4 m-2">
+                    <img src="/static/Images/oily.png" alt="">
+                    <p>Oily skin produces excess sebum, leading to a shiny appearance.<br></p>
+                    <p><b>Moisturizer:</b> Clinique Dramatically Different Moisturizing Gel<br>
+                        <b>Home remedy:</b> A clay mask made with bentonite or kaolin clay can help absorb excess oil
+                        and unclog pores. Mix the clay with water or apple cider vinegar to form a paste, apply to the
+                        face, leave on until dry, then rinse off with warm water.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="check" id="check">
+    <h1 class="heading">Check Your Skin Disease</h1>
+    <div class="check">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div id="choose">
+                <input class="b1" type="file" name="image" id="real-file">
+                <!-- <label for="real-file" id="custom-button">Choose File</label>
+                <span id="custom-text">No file chosen, yet.</span> -->
+            </div>
+            <input class="b2" type="submit" value="Predict" id="predict-button">
+
+        </form>
+    </div>
+        <div class="prediction" id="prediction" >
+<!--            <h2>Predicted Disease: {{ predicted_disease }}</h2>-->
+
+<!--                <p>Probability: {{ probability }}%</p>-->
+            <div id="popup-container" class="hidden">
+
+            </div>
+        <div class="popup-content">
+            <span id="predicted-disease"></span><br>
+            <span id="probability"></span>
+        </div>
+            {% if predicted_disease %}
+
+            <a href="{{ url_for('get_preliminary_treatment', predicted_disease=predicted_disease) }}"
+                class="link-btn">Get preliminary treatment</a>
+            {% endif %}
+
+
+</div>
+</section>
+
+    <!-- check ends -->
+    <!-- experts section starts  -->
+
+     <section class="experts" id="experts">
+
+        <h1 class="heading"> Meet our <span>Team</span> </h1>
+
+        <div class="container">
+
+            <div class="d-flex justify-content-center flex-wrap">
+
+                <div class="box">
+                    <h3>Anshuk Jirli</h3>
+                    <span>SGBIT, Belgaum</span>
+                    <div class="share">
+                        <a href="https://www.linkedin.com/in/anshuk-jirli-160075206?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>Rishab Malalikar</h3>
+                    <span>SGBIT, Belgaum</span>
+                    <div class="share">
+                        <a href="http://www.linkedin.com/in/rishab-malalikar-64753b272" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>Rohini Desai</h3>
+                    <span>SGBIT, Belgaum</span>
+                    <div class="share">
+                        <a href="https://www.linkedin.com/in/rohini-desai-4835641b8/" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Shravani M. Sagaram</h3>
+                    <span>SGBIT, Belgaum</span>
+                    <div class="share">
+                        <a href="https://www.linkedin.com/in/shravani-sagaram/" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- experts section ends -->
+    <!-- contact section starts  -->
+    <!-- contact section ends -->
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="container">
+
+            <div class="d-flex flex-wrap justify-content-center text-center text-sm-start">
+
+                <div class="box p-3 m-2">
+                    <h3>Skin Care</h3>
+                    <p>Skin care is essential for maintaining healthy and radiant skin. It involves a combination of
+                        practices aimed at nourishing, protecting, and rejuvenating the skin. Proper skin care routines
+                        typically include cleansing, exfoliating, moisturizing, and applying sunscreen.</p>
+
+                    <p>Ultimately, investing time and effort into a personalized skin care regimen can lead to
+                        healthier, more youthful-looking skin and boost confidence and self-esteem.</p>
+                </div>
+
+                <div class="box p-3 m-2">
+                    <h3>Quick links</h3>
+                    <a href="#">Home</a>
+                    <a href="#about">about</a>
+                    <a href="#prevent">skin type and disease</a>
+                    <a href="#check">check my skin type</a>
+                    <a href="#experts">our team</a>
+                    <a href="#1">Contact</a>
+
+                </div>
+
+                <div class="box p-3 m-2">
+                    <h3>Contact</h3>
+                    +91-9876543210<br>
+                    +91-9853543221<br>
+                    user123@gmail.com<br>
+                    Belgaum, India - 590010</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+    <!-- js file link  -->
+    <!--<script src="{{ url_for('static', filename='main.js') }}"></script>-->
+    <script src="/static/main.js"></script>
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to show the pop-up when the page loads
+    function showPopup(predictedDisease, probability) {
+        // Retrieve the popup container and check its existence
+        const popupContainer = document.getElementById('popup-container');
+        if (popupContainer) {
+            // Remove the 'hidden' class
+            popupContainer.classList.remove('hidden');
+
+            // Update the popup content
+            const predictedDiseaseElement = document.getElementById('predicted-disease');
+
+
+            if (predictedDiseaseElement ) {
+                predictedDiseaseElement.textContent = `Predicted Disease: ${predictedDisease}`;
+
+            } else {
+                console.error('Predicted disease or probability element not found');
+            }
+        } else {
+            console.error('Popup container not found');
+        }
+    }
+
+    // Retrieve values from template
+    const predictedDisease = "{{ predicted_disease }}";
+    const probability = parseFloat("{{ probability }}");
+
+    // Debug logs
+    console.log('Predicted Disease:', predictedDisease);
+    console.log('Probability:', probability);
+
+    // Only show the popup if predicted disease and probability are valid
+    if (predictedDisease && !isNaN(probability)) {
+        // Call the function to show the popup
+        showPopup(predictedDisease, probability);
+    }
+});
+</script>
+
+</body>
+
+</html>
